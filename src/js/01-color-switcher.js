@@ -14,12 +14,13 @@ function onStartClick(){
     }, 1000)
 }
 
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, 0)}`;
+}
 
   function onStopClick(){
     clearInterval(timerId);
     btnStart.disable = false;
   }
 
-  function getRandomHexColor() {
-    return `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, 0)}`;
-  }
+ 
